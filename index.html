@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" defer>
+    <title>Calculadora de Calorias</title>
+</head>
+<body>
+  <main>
+    <header id="main-header">
+	
+      <a id="logo-header" href="https://hhenkkogym.wixsite.com/henko">
+        <span class="site-name">HENKO CALCULATOR</span>
+      </a>
+    
+    </header>
+  <div class="contenedor">
+    <div class="columna-izquierda">
+      <div class="registro activo" id="registro">
+<form action="" method="dialog">
+  
+  <label><b>Peso:</b></label>
+  <div class="contenedor-input">
+  <input type="text" placeholder="Kilogramos" id="kilos" required>
+  </div>
+  
+  <label><b>Altura:</b></label>
+  <div class="contenedor-input">
+  <input type="text" placeholder="Centimetros" id="centimetros" required>
+  </div>
+
+  <label><b>Edad:</b></label>
+  <div class="contenedor-input">
+  <input type="text" placeholder="Años" id="anos" required>
+  </div>
+
+  <label><b>Sexo:</b></label>
+  <div class="contenedor-input">
+  <input type="radio" name="sexo" class="sexo" value="masculino" id="man" required>Masculino
+  <br>
+  <input type="radio" name="sexo" class="sexo" value="femenino" id="fem" required>Menosculino (Femenino)
+   
+</div>
+<br>
+  <label><b>Con que intensidad realiza actividad fisica: </b></label>
+  <div class="contenedor-input">
+ 
+  <input type="radio" name="frecuencia" value="nulo" id="nulo" required>Poco o ningun ejercicio
+  <br>
+  <input type="radio" name="frecuencia" value="ligero" id="ligero" required>Ejercicio ligero (1-3sesiones por semana)
+  <br>
+  <input type="radio" name="frecuencia" value="moderado" id="moderado" required>Ejercicio moderado (3-5 sesiones por semana)
+  <br>
+  <input type="radio" name="frecuencia" value="intenso" id="intenso" required>Ejercicio intenso(6-7 sesiones por semana)
+  <br>
+  <input type="radio" name="frecuencia" value="hardcore" id="hardcore" required>Ejercicio muy intenso(+8 sesiones por semana)
+</div>
+<br>
+  <label><b>Cual es su objetivo respecto a su fisico?: </b></label>
+  <div class="contenedor-input">
+  <input type="radio" name="objetivo" value="pgrasa" id="grasa" required>Perder grasa
+  <br>
+  <input type="radio" name="objetivo" value="gmasa" id="masa" required>Ganar masa muscular
+  <br>
+  <input type="radio" name="objetivo" value="mantener" id="mantener" required>Mantener mi peso corporal
+</div>
+<br>
+ <!-- <input type="submit" value="CalcularCalorias" id="boton">-->
+  <div class="div-boton">
+    <button class="contenedor-boton" id="boton" type="submit">
+      Siguiente
+    </button>
+  </div>
+</form>
+<p id="resultadoFinal"></p>
+</div>
+</div>
+</div>
+  
+</div>
+</main>
+  <script src="js/calculos.js"></script>
+</body>
+</html>
